@@ -1,46 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>The Virtual Oasis</title>
     <style>
-        h1{
-            color:blue;
-            font-size:60px;
-            border:1px solid black;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            padding-left: 50px;
-            padding-right: 50px;
-            
-        }
-        h2{
-            border:1px dotted black;
-            padding: 50px 25px;
-            margin:100px;
-        }
-        div{
-            border: 1px solid red;
-            width:400px;
-            padding:50px;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .card {
+        border: 1px solid red;
+        width: 400px;
+        padding: 50px;
+      }
+      nav > ul {
+        list-style: none;
+      }
+      .container {
+        background-color: #4a70a9;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 15px;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      .links a {
+        color: #000000;
+        text-decoration: none;
+      }
+      body {
+        background-color: grey;
+      }
+      .hero {
+        text-align: center;
+        background: url("https://i.pinimg.com/736x/95/49/8e/95498ec1dc60516fbfbda38162b31c0e.jpg");
+        padding: 100px 200px;
+        background-position: center;
+        height: 20vh;
+      }
+      .hero-text {
+        display: flex;
+        flex-direction: column;
+      }
+      .hero-text h2 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: #efece3;
+      }
+      .hero-text h1 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .button {
+        /* border: 1px solid #000000; */
+        width: 150px;
+        background-color: lightgray;
+        padding: 15px;
+        align-self: center;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 5px lightslategray;
+      }
+      .button a {
+        text-decoration: none;
+        color: dodgerblue;
+        font-size: 17px;
+        font-weight: bold;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .card-container{
+        border: 1px solid red;
+        display:flex;
+      }
+      .cards {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        margin:10px;
+      }
     </style>
-</head>
-<body>
-    <ul>
-        <li><a href="./Index.html">Home</a></li>
-        <li><a href="./New games.html">New Games</a></li>
-        <li><a href="./About us.html">About us</a></li>
-        <li><a href="./Game Categories.html">Game Categories</a></li>
-    </ul>
-    <h2 style="color: firebrick;background-color: bisque;font-size:60px;">Welcome to The Virtual Oasis</h2>
-    <h1>Discover amazing video games for all ages</h1> 
-    <div>
-        <img src="./Design.jpg" width="200px">
-        <h3>Call Of Duty</h3>
-        <p>Call of Duty is a first-person shooter military video game series and media franchise published by Activision, starting in 2003. The games were first developed by Infinity Ward, then by Treyarch and Sledgehammer Games.</p>
-
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <h1>The Virtual Oasis</h1>
+      </div>
+      <nav>
+        <ul class="links">
+          <li><a href="./Index.html">Home</a></li>
+          <li><a href="./New games.html">New Games</a></li>
+          <li><a href="./About us.html">About us</a></li>
+          <li><a href="./Game Categories.html">Game Categories</a></li>
+        </ul>
+      </nav>
     </div>
-</body>
+    <div class="hero">
+      <div class="hero-text">
+        <h2>Welcome to The Virtual Oasis</h2>
+        <h1>Discover amazing video games for all ages</h1>
+        <div class="button">
+          <a href="./New games.html">Explore Games</a>
+        </div>
+      </div>
+    </div>
+    <i class="fa-brands fa-xbox"></i>
+    <div class="card-container">
+      <div class="cards"> div 1</div>
+      <div class="cards"> div 2</div>
+      <div class="cards"> div 3</div>
+      <div class="cards"> div 4</div>
+    </div>
+    <div class="card">
+      <img src="./Design.jpg" width="200px" />
+      <h3>Call Of Duty</h3>
+      <p>
+        Call of Duty is a first-person shooter military video game series and
+        media franchise published by Activision, starting in 2003. The games
+        were first developed by Infinity Ward, then by Treyarch and Sledgehammer
+        Games.
+      </p>
+    </div>
+  </body>
 </html>
